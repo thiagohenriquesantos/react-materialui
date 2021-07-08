@@ -14,6 +14,9 @@ const useStyles = makeStyles((theme) => ({
   appBar: {
     boxShadow: 'none',
   },
+  logo: {
+    height: 25,
+  },
   menuIcon: {
     paddingRight: theme.spacing(5),
     paddingLeft: theme.spacing(6)
@@ -35,6 +38,7 @@ function Home() {
           <IconButton edge="start" className={classes.menuIcon} color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
+          <img src="/images/preto.png" alt="logo" className={classes.logo}/>
           <div className={classes.grow}/>
           <IconButton className={classes.icons} color="inherit">
             <VideoCall />
