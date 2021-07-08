@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  web:
+    command: bash -c "yarn && yarn start"
+    build: .
+    stdin_open: true
+    tty: true
+    volumes:
+      - '.:/app'
+      - node_modules:/node_modules
+    ports:
+      - 3000:3000
+volumes:
+  node_modules:
